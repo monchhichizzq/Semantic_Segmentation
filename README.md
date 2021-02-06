@@ -7,7 +7,18 @@ a. FCN(Fully Convolutional Network)
 - FCN [parameters: 134,473,084]
 <p align="center">
       <img src="images/FCN.png", width="640", height='480'>
-
+      
+- Upsampling
+1. Nearest Neighbor
+    
+$$
+  \begin{matrix}
+   1 & 2 & 3 \\
+   4 & 5 & 6 \\
+   7 & 8 & 9
+  \end{matrix} \tag{1}
+$$
+    
 - Advantages
 
  1. FCN classifies images at the pixel level, thus solving the semantic level image segmentation problem
