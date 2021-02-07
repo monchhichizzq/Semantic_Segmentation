@@ -83,7 +83,7 @@ U-net family:
 2. Valid padding increases the difficulty and universality of model design, many algorithms currently use same padding directly
 
 Questions：
- -
+
  - The feature extractor is important:
     
     1.1 Good feature representation \
