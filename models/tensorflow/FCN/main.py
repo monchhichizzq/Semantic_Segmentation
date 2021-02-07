@@ -5,7 +5,7 @@
 # @Software: PyCharm
 
 import sys
-sys.path.append('../FCN')
+sys.path.append('../../../../Semantic_Segmentation')
 
 import tensorflow as tf
 from tensorflow.keras.layers import Dropout, Input
@@ -20,8 +20,8 @@ from tensorflow.keras.layers import MaxPooling2D
 from tensorflow.keras.activations import softmax
 from tensorflow.keras.layers import Softmax
 from tensorflow.keras.models import Model
-from backbone import get_vgg_encoder
-
+from models.tensorflow.FCN.backbone import get_vgg_encoder
+# from keras_flops import get_flops
 
 class FCN8s():
     def __init__(self, backbone, add_bias = True, add_bn = False, n_classes=20):
@@ -188,6 +188,7 @@ if __name__ == '__main__':
     FCN = FCN8s(backbone='vgg16', add_bias=True, add_bn=False)
     model = FCN(input_tensor)
     model.summary()
+
 
 
 

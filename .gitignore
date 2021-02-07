@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+pregraite/
+network_profiler.py
+applications
 
 # C extensions
 *.so
